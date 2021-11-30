@@ -1,0 +1,160 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body{
+    background: rgb(173, 170, 170);
+}
+	
+.container{
+	display: flex;
+    justify-content: center;
+	}
+
+.card{
+        background: white;
+        width: 320px;
+       /* height: 400px;*/
+        margin: 20px;
+    }
+.card-image{
+    background-color: #439;
+    height: 150px;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+
+.img1{
+    background-image: url('img/img1.jpg');
+}
+.img2{
+    background-image: url('img/img2.jpg');
+}
+.img3{
+    background-image: url('img/img3.jpg');
+}
+
+.card h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:  10px;
+}
+
+.card p {
+    padding: 10px;
+    line-height: 18px;
+    max-height: calc(18px *3);
+    overflow: hidden;
+}
+.description{
+    line-height: 18px;
+    max-height: calc(18px*3);
+    overflow: hidden;
+}
+
+/*.card a {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: right;
+    margin: 20px 50px;
+    max-height: 100vh;
+}*/
+.button-readmore::after{
+    content: 'read more';
+}
+
+.button-readmore{
+    display: block;
+    text-align: center;
+    margin: 5px 50px;
+    padding: 5px 10px;
+    background: chocolate;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-readmore:hover{
+    background: #ccc;
+}
+#check-readmore:checked ~ .button-readmore::after{
+    content: 'read less';
+}
+#check-readmore:checked~ .description{
+    max-height: 100vh;
+}
+
+
+.description2{
+    line-height: 18px;
+    max-height: calc(18px*3);
+    overflow: hidden;
+}
+
+.button-readmore2::after{
+    content: 'read more';
+}
+
+.button-readmore2{
+    display: block;
+    text-align: center;
+    margin: 5px 50px;
+    padding: 5px 10px;
+    background: chocolate;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-readmore2:hover{
+    background: #ccc;
+}
+#check-readmore2:checked ~ .button-readmore2:after{
+    content: 'read less';
+}
+#check-readmore2:checked~ .description2{
+    max-height: 100vh;
+}
+
+.description3{
+    line-height: 18px;
+    max-height: calc(18px*3);
+    overflow: hidden;
+}
+
+.button-readmore3::after{
+    content: 'read more';
+}
+
+.button-readmore3{
+    display: block;
+    text-align: center;
+    margin: 5px 50px;
+    padding: 5px 10px;
+    background: chocolate;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-readmore3:hover{
+    background: #ccc;
+}
+#check-readmore3:checked ~ .button-readmore3:after{
+    content: 'read less';
+}
+#check-readmore3:checked~ .description3{
+    max-height: 100vh;
+}
+
+#check-readmore{
+    position: absolute;
+    left: -100px;
+}
+#check-readmore2{
+    position: absolute;
+    left: -100px;
+}
+#check-readmore3{
+    position: absolute;
+    left: -100px;
+}
